@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="15.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.12" fx:controller="com.example.atv2_cleiton.HelloController">
+
+    <padding>
+        <Insets bottom="20" left="20" right="20" top="20" />
+    </padding>
+
+    <Label text="Conversor de Temperatura" />
+
+    <TextField fx:id="txtValor" promptText="Digite a temperatura" />
+
+    <HBox alignment="CENTER" spacing="10">
+        <Button fx:id="btnParaF" text="Converter para °F" />
+        <Button fx:id="btnParaC" text="Converter para °C" />
+    </HBox>
+
+    <Label fx:id="lblResultado" text="Resultado:" />
+</VBox>

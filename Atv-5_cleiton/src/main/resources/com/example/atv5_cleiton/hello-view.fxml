@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="TOP_CENTER" spacing="10" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.atv5_cleiton.HelloController">
+
+    <padding>
+        <Insets top="15" right="15" bottom="15" left="15"/>
+    </padding>
+
+    <Label text="Cadastro de Alunos"/>
+
+    <!-- Linha Nome -->
+    <HBox spacing="10">
+        <Label text="Nome:"/>
+        <TextField fx:id="txtNome" promptText="Nome do aluno" prefWidth="200"/>
+    </HBox>
+
+    <!-- Linha Idade e Curso -->
+    <HBox spacing="10">
+        <Label text="Idade:"/>
+        <TextField fx:id="txtIdade" promptText="Idade" prefWidth="60"/>
+
+        <Label text="Curso:"/>
+        <ComboBox fx:id="cbCurso" prefWidth="160"/>
+    </HBox>
+
+    <!-- Botões -->
+    <HBox spacing="10">
+        <Button fx:id="btnAdicionar" text="Adicionar"/>
+        <Button fx:id="btnExcluir" text="Excluir"/>
+    </HBox>
+
+    <!-- Mensagem -->
+    <Label fx:id="lblMensagem" text="" />
+
+    <!-- Tabela -->
+    <TableView fx:id="tabelaAlunos" prefHeight="200" prefWidth="400">
+        <columns>
+            <TableColumn fx:id="colNome" text="Nome" prefWidth="160"/>
+            <TableColumn fx:id="colIdade" text="Idade" prefWidth="80"/>
+            <TableColumn fx:id="colCurso" text="Curso" prefWidth="160"/>
+        </columns>
+    </TableView>
+
+</VBox>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="TOP_CENTER" spacing="10" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.atv6_cleiton.HelloController">
+
+    <padding>
+        <Insets top="15" right="15" bottom="15" left="15"/>
+    </padding>
+
+    <Label text="Montagem de Lanche"/>
+
+    <!-- Nome do cliente -->
+    <HBox spacing="10">
+        <Label text="Cliente:"/>
+        <TextField fx:id="txtNomeCliente" promptText="Nome do cliente" prefWidth="200"/>
+    </HBox>
+
+    <!-- Tipo de pão -->
+    <HBox spacing="10">
+        <Label text="Tipo de pão:"/>
+        <ComboBox fx:id="cbPao" prefWidth="150"/>
+    </HBox>
+
+    <!-- Tipo de carne -->
+    <VBox spacing="5">
+        <Label text="Tipo de carne:"/>
+        <HBox spacing="10">
+            <RadioButton fx:id="rbBovina" text="Bovina"/>
+            <RadioButton fx:id="rbFrango" text="Frango"/>
+            <RadioButton fx:id="rbSoja" text="Soja"/>
+        </HBox>
+    </VBox>
+
+    <!-- Adicionais -->
+    <VBox spacing="5">
+        <Label text="Adicionais:"/>
+        <HBox spacing="10">
+            <CheckBox fx:id="chkQueijo" text="Queijo"/>
+            <CheckBox fx:id="chkBacon" text="Bacon"/>
+        </HBox>
+        <HBox spacing="10">
+            <CheckBox fx:id="chkSalada" text="Salada"/>
+            <CheckBox fx:id="chkMolho" text="Molho"/>
+        </HBox>
+    </VBox>
+
+    <!-- Botão -->
+    <Button fx:id="btnGerarPedido" text="Gerar Pedido"/>
+
+    <!-- Resultado -->
+    <Label fx:id="lblResultado" text="Resumo do pedido aparecerá aqui." wrapText="true"/>
+
+</VBox>

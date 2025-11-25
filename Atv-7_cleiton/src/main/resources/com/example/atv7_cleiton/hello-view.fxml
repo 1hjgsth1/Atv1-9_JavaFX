@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+
+<VBox alignment="CENTER" spacing="20" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.atv7_cleiton.HelloController">
+
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <!-- Semáforo -->
+    <VBox alignment="CENTER" spacing="15">
+        <Circle fx:id="luzVermelha" radius="35"/>
+        <Circle fx:id="luzAmarela" radius="35"/>
+        <Circle fx:id="luzVerde" radius="35"/>
+    </VBox>
+
+    <!-- Botões -->
+    <HBox spacing="15">
+        <Button fx:id="btnIniciar" text="Iniciar"/>
+        <Button fx:id="btnParar" text="Parar"/>
+    </HBox>
+
+</VBox>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="12" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.atv9_cleiton.HelloController">
+
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <Label text="Simulador de Conta de Luz"/>
+
+    <!-- Nome do cliente -->
+    <HBox spacing="10">
+        <Label text="Cliente:"/>
+        <TextField fx:id="txtNome" promptText="Nome do cliente" prefWidth="220"/>
+    </HBox>
+
+    <!-- Consumo -->
+    <HBox spacing="10">
+        <Label text="Consumo (kWh):"/>
+        <TextField fx:id="txtKwh" promptText="Ex: 350" prefWidth="100"/>
+    </HBox>
+
+    <!-- Tipo de residência -->
+    <HBox spacing="10">
+        <Label text="Tipo:"/>
+        <ComboBox fx:id="cbTipo" prefWidth="150"/>
+    </HBox>
+
+    <!-- Botão -->
+    <Button fx:id="btnCalcular" text="Calcular"/>
+
+    <!-- Resultado -->
+    <Label fx:id="lblResultado"
+           text="Informe os dados e clique em Calcular."
+           wrapText="true"/>
+
+</VBox>
